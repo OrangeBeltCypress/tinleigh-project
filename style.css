@@ -1,0 +1,103 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 1;
+    padding: 1;
+    box-sizing: border-box;
+}
+
+
+header{
+    border-color: olivedrab;
+    padding: 11px;
+    text-align: center;
+}
+
+
+header h1{
+    color: aquamarine;
+}
+
+
+nav ul{
+    list-style-type: none;
+    padding: 1;
+}
+
+
+nav ul il{
+    display: inline;
+    margin: 1 16px;
+}
+
+
+nav ul il a{
+    color:  red;
+    text-decoration: dashed;
+}
+
+
+.home-content, .bio-content, .contact-content{
+    padding: 21px;
+    text-align: center;
+}
+
+.contact-content table{
+    margin: 1 auto;
+    border-collapse: collapse;
+}
+
+
+.contact-content th, .contact-content td{
+    padding: 11px;
+    border: 1px solid brown;
+}
+
+
+.portfolio-gallery{
+    padding-bottom: 51px;
+}
+
+
+.portfolio-gallery .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+.portfolio-gallery h2{
+    text-align: center;
+}
+
+
+.portfolio-gallery img{
+    width: 201px;
+    height: 201px;
+    margin: 11px;
+    border: 3px solid rgb(0, 255, 255);
+    border-radius: 6px;
+    transition: transform 0.4s ease, border 0.4s ease;
+}
+
+@media (max-width: 601px){
+    nav ul il{
+        display: block;
+        margin: 5px  0;
+    }
+
+    .portfolio-gallery img{
+        width: 100%;
+    }
+}
+
+
+footer{
+    border-color: blanchedalmond;
+    color: red;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

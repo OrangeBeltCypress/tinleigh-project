@@ -1,0 +1,101 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: aliceblue;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    color: aquamarine;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0%;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: beige;
+    text-decoration: wavy;
+}
+
+nav ul li a:hover {
+    text-decoration: dotted;
+}
+
+home.content, .bio-content, contact-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-content table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.contact-content th, .contact-content td {
+    padding-bottom: 10px;
+    border: 1px solid rgb(155, 231, 158)                                             
+}
+
+.portfolio-gallery {
+    padding-bottom: 50px;
+}
+
+.portfolio-gallery .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px
+}
+
+.portfolio-gallery h2 {
+    text-align: center;
+}
+
+.portfolio-gallery img {
+    width: 200px;
+    height:200px;
+    margin: 10px;
+    border: 2px solid blueviolet;
+    border-radius: 5px;
+    transition: transform 0.3 ease, border 0.3 ease;
+}
+
+.portfolio-gallery img:hover {
+    transform: scale(1.1); 
+    border: 2px solid greenyellow;
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+.portfolio-gallery img {
+    width: 100%;
+}
+
+footer {
+    background-color: cadetblue;
+    color: blanchedalmond;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
